@@ -6,6 +6,9 @@
     --bg-plant: #9E6D52;
     --bg-grayish: #D9D9D9;
 }
+a {
+    text-decoration: none;
+}
 
 body {
     max-width: 1000px;
@@ -20,6 +23,8 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 390px 195px;
     background-color: #aaa;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border: Mixed solid #FFFFFF;
 }
 
 .page-header .logo {
@@ -59,4 +64,69 @@ body {
 .plant .img-plant {
     width: 111.44px;
     height: 124px;
+}
+
+/*=== nav ===*/
+.page-nav {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}
+.img-nav {
+    width: 40px;
+    height: fit-content;
+}
+.page-nav a {
+    color: var(--greenish);
+    font-weight: bold;
+}
+
+.page-nav .nav-content {
+    list-style-type: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    min-width: 160px;
+    padding: 4px 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f1f1f1;
+    color: var(--greenish);
+    z-index: 1;
+    display: none;
+}
+
+.page-nav .nav-content > li {
+    padding-block: 6px;
+}
+
+.page-nav:hover .nav-content {
+    display: block;
+}
+
+/* ### 800px ###*/
+@media screen and (min-width: 800px) {
+    
+    /*=== nav ===*/
+    .page-nav {
+        position:unset;
+
+    }
+    .img-nav {
+        display: none;
+    }
+    .page-nav .nav-content {
+        position: unset;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .page-nav .nav-content li {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .page-nav:hover .nav-content {
+        display: grid;
+    }
 }
