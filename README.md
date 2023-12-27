@@ -1,4 +1,4 @@
-# Planned Planthood
+# Exercise Planned Planthood
 Övning i responsiv design i HTML/CSS
 
 Våren nalkas och det är dags att börja planera sina planteringar!

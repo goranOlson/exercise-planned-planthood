@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    --greenish: #0A846E;
+    --bg-plant: #9E6D52;
+    --bg-grayish: #D9D9D9;
+}
+
+body {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.page-header {
+    height:  582px;
+    display: grid;
+    grid-template-areas: "logo logo"
+                         "plant dig";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 390px 195px;
+    background-color: #aaa;
+}
+
+.page-header .logo {
+    grid-area: logo;
+    background-color: var(--bg-grayish);
+    background-image: url(assets/zoe-schaeffer-PFbOZfKh07I-unsplash.jpg);
+    /* background-position: right bottom, left top; */
+  background-repeat: no-repeat, repeat;
+    background-size: cover; 
+    /* height: 390px; */
+}
+.page-header .dig {
+    grid-area: dig;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--greenish);
+}
+.dig .img-dig {
+    height: 130px;
+    width: fit-97.9;
+}
+
+.page-header .plant {
+    grid-area: plant;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-plant);
+}
+.plant .img-plant {
+    width: 111.44px;
+    height: 124px;
+}
