@@ -1,11 +1,16 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-
+:root {
     --greenish: #0A846E;
     --bg-plant: #9E6D52;
     --bg-grayish: #D9D9D9;
+
+    --font-first: 'Maven Pro';
 }
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -13,6 +18,20 @@ a {
 body {
     max-width: 1000px;
     margin-inline: auto;
+}
+
+h1 {
+    font-family: var(--font-first);
+}
+
+h2 {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+
 }
 
 .page-header {
@@ -72,13 +91,23 @@ body {
     top: 13px;
     right: 20px;
 }
+
 .img-nav {
     width: 40px;
     height: fit-content;
 }
+
 .page-nav a {
     color: var(--greenish);
     font-weight: bold;
+    font-family: var(--font-first);
+    /* font-family: Maven Pro; */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    
 }
 
 .page-nav .nav-content {
@@ -105,7 +134,16 @@ body {
 
 /* ### 800px ###*/
 @media screen and (min-width: 800px) {
-    
+    /*=== header ===*/
+    .page-header {
+        grid-template-areas: "logo plant"
+                             "logo dig";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 540px;
+    }
+
+
     /*=== nav ===*/
     .page-nav {
         position:unset;
