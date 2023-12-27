@@ -26,11 +26,16 @@ body {
     grid-area: logo;
     background-color: var(--bg-grayish);
     background-image: url(assets/zoe-schaeffer-PFbOZfKh07I-unsplash.jpg);
-    /* background-position: right bottom, left top; */
-  background-repeat: no-repeat, repeat;
+    background-repeat: no-repeat, repeat;
     background-size: cover; 
-    /* height: 390px; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+.logo .img-flower {
+    height: 186px;
+}
+
 .page-header .dig {
     grid-area: dig;
     display: grid;
