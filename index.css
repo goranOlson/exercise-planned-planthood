@@ -166,41 +166,34 @@ h2 {
 }
 
 .part-planned .planned-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    row-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    padding-block: 30px;
-    
-    /* background-color: #eee; */
-    
-}
-
-.circle {
-    width: 241px;
-    height: 241px;
-
-    border-radius: 239px;
-    border: 14px;
-    background-color: var(--greenish);
-    box-shadow: 0px 4px 4px 0px #00000040 inset;
-    position: relative;
     display: grid;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+    padding-block: 30px;
+    font-family: var(--font-second);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 350px;
+    /* background-color: #eee; */
 }
+
+
+
+
 .img-seeding {
     width: 126px;
     height: 124px;
     border: 1px;
-
 }
+
 button {
     width: 98.63px;
     height: 34.71px;
-
+    margin-inline: auto;
     background-color: var(--greenish);
     border: 0;
     border-radius: 9px;
@@ -216,8 +209,33 @@ button {
 
 }
 
+.circle {
+    width: 241px;
+    height: 241px;
+
+    border-radius: 239px;
+    border: 14px;
+    background-color: var(--greenish);
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 202px;
+    border: 3px;
+    border: 3px solid #055647;
+    /* border: 3px solid var(--greenish); */
+    margin-inline: auto;
+    margin-block: 40px;
+}
 /* ######  800px  ######*/
 @media screen and (min-width: 800px) {
+    h1 {
+        font-size: 48px;
+    }
     /*=== header ===*/
     .page-header {
         grid-template-areas: "logo plant"
@@ -226,6 +244,35 @@ button {
         grid-template-rows: 1fr 1fr;
         height: 540px;
     }
+
+    .part-planned {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        row-gap: 50px;
+            /* background-color: #eee; */
+    }
+
+    .part-planned .planned-container {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 60px;
+    }
+    .part-planned h2 {
+        font-size: 24px;
+        text-align: left;
+    }
+    .part-planned .planned-text {
+        max-width: 390px;
+        order: 2;
+        text-align: left;
+    }
+    .part-planned .circle {
+        order: 1;
+    }
+    .part-planned button {
+        margin-right: 0;
+    }
+
 
 
     /*=== nav ===*/
@@ -250,5 +297,15 @@ button {
 
     .page-nav:hover .nav-content {
         display: grid;
+    }
+
+    .circle {
+        width: 377px;
+        height: 377px;
+    }
+    button {
+        width: 179px;
+        height: 63px;
+        font-size: 24px;
     }
 }
