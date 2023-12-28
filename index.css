@@ -158,6 +158,13 @@ h2 {
     /* background-color: red; */
 }
 
+.art-container .art-inner.previous {
+    display: grid;
+    grid-template-areas: 
+        "circle-box"
+        "text-box";
+}
+
 .art-container h2 {
     font-family: Open Sans;
     font-size: 16px;
@@ -173,18 +180,19 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+
+.art-container .text-box {
+    grid-area: text-box;
+}
+
 .art-container .circle-box {
+    grid-area: circle-box;
     display: flex;
     justify-content: center;
 }
 
-.art-container .season .text-box {
-    grid-area: text-box;
-}
-
-
 .art-container .season .circle {
-    grid-area: circle;
+    /* grid-area: circle; */
 }
 
 .art-container .text-box {
@@ -216,8 +224,8 @@ h2 {
 }
 
 button {
-    width: 98.63px;
-    height: 34.71px;
+    width: max-content;
+    padding: 6px 20px;
     margin-inline: auto;
     background-color: var(--greenish);
     border: 0;
@@ -231,7 +239,7 @@ button {
     line-height: 22px;
     letter-spacing: 0em;
     text-align: center;
-
+    white-space: nowrap;
 }
 
 .circle {
@@ -275,15 +283,25 @@ button {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         row-gap: 50px;
-
+        padding-inline: 8px;
             /* background-color: #eee; */
     }
 
     .art-container .art-inner {
-        flex-direction: row;
+        /* flex-direction: row;
         justify-content: center;
+        column-gap: 60px; */
+    }
+
+    .art-container .art-inner.season {
+        grid-template-areas: "circle-box text-box";
         column-gap: 60px;
     }
+    .art-container .art-inner.previous {
+        grid-template-areas: "text-box circle-box";
+        column-gap: 60px;
+    }
+
     .art-container h2 {
         font-size: 24px;
         text-align: left;
@@ -336,8 +354,7 @@ button {
         height: 377px;
     }
     button {
-        width: 179px;
-        height: 63px;
+        padding: 12px 20px;
         font-size: 24px;
     }
 }
