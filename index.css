@@ -142,13 +142,23 @@ h2 {
 }
 
 /*=== art-planned ===*/
-.part-planned {
+.art-container {
     display: grid;
     justify-content: center;
     /* background-color: #aaa; */
 }
 
-.part-planned h2 {
+.art-container .art-inner.season {
+    display: grid;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; */
+    grid-template-areas: 
+        "text-box"
+        "circle-box";
+    /* background-color: red; */
+}
+
+.art-container h2 {
     font-family: Open Sans;
     font-size: 16px;
     font-weight: 700;
@@ -158,14 +168,26 @@ h2 {
 
 }
 
-.part-planned .planned-container {
+.art-container .art-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+}
+.art-container .circle-box {
+    display: flex;
+    justify-content: center;
 }
 
-.part-planned .planned-text {
+.art-container .season .text-box {
+    grid-area: text-box;
+}
+
+
+.art-container .season .circle {
+    grid-area: circle;
+}
+
+.art-container .text-box {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -249,7 +271,7 @@ button {
         height: 540px;
     }
 
-    .part-planned {
+    .art-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         row-gap: 50px;
@@ -257,28 +279,28 @@ button {
             /* background-color: #eee; */
     }
 
-    .part-planned .planned-container {
+    .art-container .art-inner {
         flex-direction: row;
         justify-content: center;
         column-gap: 60px;
     }
-    .part-planned h2 {
+    .art-container h2 {
         font-size: 24px;
         text-align: left;
     }
-    .part-planned .planned-text {
+    .art-container .text-box {
         max-width: 390px;
         order: 2;
         text-align: left;
     }
-    .part-planned .circle {
+    .art-container .circle {
         order: 1;
     }
-    .part-planned button {
+    .art-container button {
         margin-right: 0;
     }
 
-    .part-planned .img-seeding {
+    .art-container .img-seeding {
         width: 200px;
         height: auto;
     }
