@@ -233,18 +233,24 @@ h2 {
     text-align: left;
 }
 
-.page-footer .footer-box {
+.page-footer .box-img,
+.page-footer .box-contact {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 401px;
 }
-.page-footer .footer-box.contact {
-    background-color: #000b;
+.page-footer .box-img {
+    grid-area: box-img;
+}
 
+.page-footer .box-contact {
+    grid-area: box-contact;
+    background-color: #000b;
     color: #fff;
     position: relative;
 }
+
 
 .page-footer h2 {
     font-size: 32px;
@@ -266,6 +272,7 @@ h2 {
     padding: 16px
 }
 .page-footer .to-top {
+    grid-area: to-top;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,6 +347,8 @@ button {
         margin-block: 70px;
         font-size: 48px;
     }
+
+
     /*=== header ===*/
     .page-header {
         grid-template-areas: "logo plant"
@@ -353,7 +362,7 @@ button {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         row-gap: 50px;
-        padding-inline: 8px;
+        padding-inline: 16px;
             /* background-color: #eee; */
     }
 
@@ -367,23 +376,31 @@ button {
         grid-template-areas: "circle-box text-box";
         column-gap: 60px;
     }
+
     .art-container .art-inner.previous {
         grid-template-areas: "text-box circle-box";
         column-gap: 60px;
+    }
+
+    .art-container .art-inner.season .button-field {
+        text-align: right;
     }
 
     .art-container h2 {
         font-size: 24px;
         text-align: left;
     }
+
     .art-container .text-box {
         max-width: 390px;
         order: 2;
         text-align: left;
     }
+
     .art-container .circle {
         order: 1;
     }
+
     .art-container button {
         margin-right: 0;
     }
@@ -392,7 +409,6 @@ button {
         width: 200px;
         height: auto;
     }
-
 
 
     /*=== nav ===*/
@@ -417,6 +433,19 @@ button {
 
     .page-nav:hover .nav-content {
         display: grid;
+    }
+
+
+
+
+    /*=== footer ===*/
+    .page-footer {
+        display: grid;
+        grid-template-areas:
+            "box-contact box-img"
+            "to-top to-top";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
     }
 
     .circle {
