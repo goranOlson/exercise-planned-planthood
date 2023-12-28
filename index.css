@@ -145,17 +145,13 @@ h2 {
 .art-container {
     display: grid;
     justify-content: center;
-    /* background-color: #aaa; */
 }
 
 .art-container .art-inner.season {
     display: grid;
-    /* grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; */
     grid-template-areas: 
         "text-box"
         "circle-box";
-    /* background-color: red; */
 }
 
 .art-container .art-inner.previous {
@@ -211,17 +207,82 @@ h2 {
     /* background-color: #eee; */
 }
 .button-field {
-    
     /* text-align: right; */
 }
-
-
 
 .img-seeding {
     width: 126px;
     height: 124px;
     border: 1px;
 }
+
+
+
+/*=== footer ===*/
+.page-footer {
+    background-image: url(assets/touch-plants.png);
+    background-repeat: no-repeat, repeat;
+    background-size: cover; 
+    background-position: center center;
+
+    font-family: Maven Pro;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.page-footer .footer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 401px;
+}
+.page-footer .footer-box.contact {
+    background-color: #000b;
+
+    color: #fff;
+    position: relative;
+}
+
+.page-footer h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.page-footer .footer-details {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 8px;
+
+    
+
+}
+.page-footer .footer-details > span {
+    padding: 16px
+}
+.page-footer .to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 50px;
+
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.page-footer .to-top a {
+    color: black;
+}
+
 
 button {
     width: max-content;
@@ -264,6 +325,15 @@ button {
     margin-inline: auto;
     margin-block: 40px;
 }
+
+
+
+
+
+
+
+
+
 /* ######  800px  ######*/
 @media screen and (min-width: 800px) {
     h1 {
