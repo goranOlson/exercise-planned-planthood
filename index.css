@@ -141,7 +141,7 @@ h2 {
     display: block;
 }
 
-/*=== arg-planned ===*/
+/*=== art-planned ===*/
 .part-planned {
     display: grid;
     justify-content: center;
@@ -180,7 +180,10 @@ h2 {
     max-width: 350px;
     /* background-color: #eee; */
 }
-
+.button-field {
+    
+    /* text-align: right; */
+}
 
 
 
@@ -234,6 +237,7 @@ button {
 /* ######  800px  ######*/
 @media screen and (min-width: 800px) {
     h1 {
+        margin-block: 70px;
         font-size: 48px;
     }
     /*=== header ===*/
@@ -249,6 +253,7 @@ button {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         row-gap: 50px;
+
             /* background-color: #eee; */
     }
 
@@ -271,6 +276,11 @@ button {
     }
     .part-planned button {
         margin-right: 0;
+    }
+
+    .part-planned .img-seeding {
+        width: 200px;
+        height: auto;
     }
 
 
