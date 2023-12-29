@@ -37,6 +37,7 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     gap: 30px;
+    margin-block: 20px;
     padding-inline: 16px;
     /* background-color: #fdd; */
 }
@@ -49,7 +50,6 @@ h2 {
     letter-spacing: 0em;
     text-align: left;
     color: #060606;
-    margin-block: 20px;
 }
 
 .add-planting input {
