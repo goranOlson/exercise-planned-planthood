@@ -15,35 +15,55 @@
             <img src="assets/Logo.svg" class="img-flower" alt="Logotype">
         </div>
         <h1>Mina sidor</h1>
+        <nav class="page-nav">
+            <img src="assets/burgir.png" class="img-nav" alt="NAV">
+            <ul class="nav-content">
+                <li><a href="index.html">PLANNER</a></li>
+                <li><a href="#">HISTORIK</a></li>
+                <li><a href="#">TIPS</a></li>
+                <li><a href="my-pages.html">LOGGA IN</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav class="page-nav">
-        <img src="assets/burgir.png" class="img-nav" alt="NAV">
-        <ul class="nav-content">
-            <li><a href="index.html">PLANNER</a></li>
-            <li><a href="#">HISTORIK</a></li>
-            <li><a href="#">TIPS</a></li>
-            <li><a href="my-pages.html">LOGGA IN</a></li>
-        </ul>
-    </nav>
+    
     
     <main>
         <article class="add-planting">
             <h2>Lägg till ny plantering:</h2>
-
-            <div>
-                <label for="plant">Planta:</label>
-                <input type="text" id="plant" name="plant">
-            </div>
-            
-            <div>
-                <label for="date">Datum:</label>
-                <input type="text" id="date" name="date">
+            <div class="add-input-container">
+                <div>
+                    <label for="plant">Planta:</label>
+                    <input type="text" id="plant" name="plant">
+                </div>
+                <div>
+                    <label for="date">Datum:</label>
+                    <input type="text" id="date" name="date">
+                </div>
             </div>
             <button>LÄGG TILL</button>
         </article>
 
+        <section class="art-your-plans">
+            <h2>Dina planerade planteringar:</h2>
+            <div class="card-collection">
+                <article class="item cucumber">
+                    <div class="img-box">
+                        <img src="assets/plant.svg" class="plant" alt="Plant image">
+                    </div>
+                    <div class="txt-row">
+                        <span class="product">Gurka</span>
+                        <span class="date">15 april 2024</span>
+                    </div>
+                    <div class="txt-row">
+                        <span class="supplier">Rico Coolio</span>
+                        <img src="assets/trash-red.png" class="garbage" alt="Garbage bin">
+                        <button class="remove">TA BORT</button>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-        <section class="art-our-plans">
+        <section class="art-your-planted">
             <h2>Dina planterade planteringar:</h2>
             <div class="card-collection">
                 <article class="item cucumber">
@@ -60,11 +80,22 @@
                         <button class="remove">TA BORT</button>
                     </div>
                 </article>
-                
+                <article class="item cucumber">
+                    <div class="img-box">
+                        <img src="assets/plant.svg" class="plant" alt="Plant image">
+                    </div>
+                    <div class="txt-row">
+                        <span class="product">Gurka</span>
+                        <span class="date">15 april 2024</span>
+                    </div>
+                    <div class="txt-row">
+                        <span class="supplier">Rico Coolio</span>
+                        <img src="assets/trash-red.png" class="garbage" alt="Garbage bin">
+                        <button class="remove">TA BORT</button>
+                    </div>
+                </article>
             </div>
-            <button>Visa flera</button>
         </section>
-
 
     </main>
 

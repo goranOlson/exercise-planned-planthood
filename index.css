@@ -210,11 +210,11 @@ h2 {
 }
 
 /*=== art-our-plans ===*/
-.card-collection {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    padding-block: 16px;
+
+.art-our-plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .art-our-plans h2 {
@@ -227,13 +227,15 @@ h2 {
 
 }
 
+
 .card-collection {
-    min-height: 100px;
-    padding-inline: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 8px;
+    min-height: 100px;
+    padding-inline: 16px;
+    padding-block: 16px;
 }
 
 .card-collection .item {
@@ -242,13 +244,13 @@ h2 {
     box-shadow: 1px 1px 3px #aaa;
 }
 
-.txt-row {
+.card-collection .item .txt-row {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 4px;
 }
-.card-collection .product {
+.card-collection .item .txt-row .product {
     font-family: Lato;
     font-size: 14px;
     font-weight: 600;
@@ -256,7 +258,7 @@ h2 {
     letter-spacing: 0em;
     text-align: left;
 }
-.card-collection .date {
+.card-collection .item .txt-row .date {
     font-family: Open Sans;
     font-size: 10px;
     font-weight: 700;
@@ -264,7 +266,7 @@ h2 {
     letter-spacing: 0em;
     text-align: right;
 }
-.card-collection .supplier {
+.card-collection .item .txt-row .supplier {
     font-family: Lato;
     font-size: 10px;
     font-weight: 300;
@@ -272,11 +274,11 @@ h2 {
     letter-spacing: 0em;
     text-align: left;
 }
-.card-collection .item img.garbage {
+.card-collection .item .txt-row img.garbage {
     width: 24px;
 }
 
-.card-collection button.remove {
+.card-collection .item button.remove {
     padding: 4px;
     background-color: #B93857;
     font-family: Open Sans;
@@ -301,6 +303,8 @@ h2 {
 
     background-size: cover;
 }
+
+
 
 .card-collection .item.cucumber .img-box {
     background-image: url(assets/cucumber.png);
@@ -333,7 +337,8 @@ h2 {
 }
 
 .art-our-plans button {
-    margin-block: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 
@@ -565,17 +570,21 @@ button {
 
 
     /*=== our plants ===*/
-    .card-collection {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 16px;
-    }
-
     .art-our-plans h2 {
         font-family: Lato;
         font-size: 32px;
         line-height: 38px;
         color: black;
     }
+
+
+
+    .card-collection {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 16px;
+    }
+
+   
     .card-collection .item {
         height: 407px;
         box-shadow: 3px 4px 4px 0px #00000040;
@@ -588,30 +597,31 @@ button {
         height: 205.57px;
         width: auto;
     }
-    .card-collection .txt-row {
+    .card-collection .item .txt-row {
         padding: 8px;
+        margin-bottom: 18px;
     }
 
-    .card-collection .product {
+    .card-collection .item .text-box .product {
         font-size: 24px;
         line-height: 29px;
     }
 
-    .card-collection .date {
+    .card-collection .item .text-box .date {
         font-size: 16px;
         line-height: 22px;
     }
 
-    .card-collection .supplier {
+    .card-collection .item .text-box .supplier {
         font-size: 16px;
         line-height: 19px;
     }
 
-    .card-collection .garbage {
+    .card-collection .item .garbage {
         display: none;
     }
 
-    .card-collection button.remove {
+    .card-collection .item  button.remove {
         display: block;
         margin: 0;
     }
@@ -628,6 +638,8 @@ button {
         grid-template-rows: auto auto;
     }
 
+
+    
     .circle {
         width: 377px;
         height: 377px;
@@ -636,13 +648,6 @@ button {
         padding: 12px 20px;
         font-size: 24px;
     }
-
-
-
-
-
-
-
 
     .line {
         width: 280px;
