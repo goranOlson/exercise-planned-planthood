@@ -295,20 +295,43 @@ h2 {
 .art-our-plans .item .img-box {
     position: relative;
     height: 160px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
+
+.art-our-plans .item.cucumber .img-box {
+    /* background-image: url(assets/cucumber.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+
 .art-our-plans .item .img-box .plant {
     position: absolute;
-    top: 0;
+    /* top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    height: 120px;
+    margin: auto; */
+    height: 100px;
 }
 
 .art-our-plans .item img {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
+
+    align-self: center;
+    height: auto;
+    height: 100%;
+    /* width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    
 }
 
 .art-our-plans button {
@@ -429,9 +452,8 @@ button {
     width: 202px;
     border: 3px;
     border: 3px solid #055647;
-    /* border: 3px solid var(--greenish); */
     margin-inline: auto;
-    margin-block: 40px;
+    margin-block: 60px 40px;
 }
 
 
@@ -462,7 +484,7 @@ button {
     .art-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-        row-gap: 50px;
+        /* row-gap: 50px; */
         padding-inline: 16px;
             /* background-color: #eee; */
     }
@@ -556,5 +578,17 @@ button {
     button {
         padding: 12px 20px;
         font-size: 24px;
+    }
+
+
+
+
+
+
+
+
+    .line {
+        width: 280px;
+        border-width: 2px;
     }
 }
