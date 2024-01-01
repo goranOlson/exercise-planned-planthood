@@ -388,13 +388,24 @@ h2 {
     justify-content: space-between;
     width: 100%;
     padding-inline: 8px;
-
-    
-
+    /* font-size: 17px; */
 }
 .page-footer .footer-details > span {
-    padding: 16px
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
 }
+.page-footer .footer-details .img-phone {
+    height: 20px;
+    width: auto;
+}
+.page-footer .footer-details .img-envelop {
+    height: 20px;
+    width: auto;
+    background-color: white;
+}
+
 .page-footer .to-top {
     grid-area: to-top;
     display: flex;
@@ -626,6 +637,12 @@ button {
             "to-top to-top";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
+    }
+    .page-footer h2 {
+        font-size: 44px;
+    }
+    .page-footer .footer-details {
+        font-size: 17px;
     }
 
 
