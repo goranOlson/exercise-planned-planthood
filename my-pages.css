@@ -107,12 +107,29 @@ h2 {
 
     background: #9E6D52;
 }
+.art-gallery .gallery-item {
+    height: 92px;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .art-gallery img {
+
+    width: 100%;
     background-color: #eee;
     
 
 }
+
+.card-collection .item.gallery {
+    height: 92px;
+    overflow: hidden;
+}
+
 
 
 
@@ -182,8 +199,6 @@ h2 {
         box-shadow: 0px 4px 4px 0px #00000040;
     }
 
-
-
     .art-your-plans h2,
     .art-your-planted h2 {
         font-family: Lato;
@@ -199,6 +214,10 @@ h2 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         height: 277px;
+    }
+
+    .art-gallery .gallery-item {
+        height: 100%;
     }
 }
 
