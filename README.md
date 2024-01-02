@@ -8,4 +8,4 @@ Kunden bor i ett kollektiv där de har en kolonilott på innergården och det ka
 
 Följande design har tagits fram och det är ditt jobb att bygga denna hemsida: [Figma ritning](https://www.figma.com/file/Hbrk29Q2rVzXiXcFWdTXDA/planned-planthood?type=design&node-id=0%3A1&mode=design&t=YeEpGauWV2WBtUKl-1)
 
-Alla svg-ikoner finns i det medföljande assets-foldern. På varje bild så finns det en kommentar som länkar till en sida där bilden går att hämta ifrån.
+Alla svg-ikoner finns i det medföljande img-foldern. På varje bild så finns det en kommentar som länkar till en sida där bilden går att hämta ifrån.

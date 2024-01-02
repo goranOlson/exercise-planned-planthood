@@ -8,7 +8,7 @@
     justify-content: center;
 }
 .page-header .logo {
-    background-image: url(assets/touch-plants.png);
+    background-image: url(img/touch-plants.png);
 }
 h1 {
     position: absolute;
@@ -118,7 +118,7 @@ h2 {
 }
 
 .art-gallery .gallery-item .img-1 {
-    background: url(assets/gallery-img1-2.png);
+    background: url(img/gallery-img1-2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -144,8 +144,8 @@ h2 {
 @media screen and (min-width: 800px) {
     .page-header {
         grid-template-areas:
-        "nav"
-        "logo";
+            "nav"
+            "logo";
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         height: max-content;

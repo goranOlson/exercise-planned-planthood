@@ -55,7 +55,7 @@ h2 {
 .page-header .logo {
     grid-area: logo;
     background-color: var(--bg-grayish);
-    background-image: url(assets/zoe-schaeffer-PFbOZfKh07I-unsplash.jpg);
+    background-image: url(img/zoe-schaeffer-PFbOZfKh07I-unsplash.jpg);
     background-repeat: no-repeat, repeat;
     background-size: cover; 
     background-position: center center;
@@ -307,22 +307,22 @@ h2 {
 
 
 .card-collection .item.cucumber .img-box {
-    background-image: url(assets/cucumber.png);
+    background-image: url(img/cucumber.png);
 }
 .card-collection .item.green-tomatos .img-box {
-    background-image: url(assets/green-tomatos.jpg);
+    background-image: url(img/green-tomatos.jpg);
 }
 .card-collection .item.red-tomat .img-box {
-    background-image: url(assets/red-tomat.jpg);
+    background-image: url(img/red-tomat.jpg);
 }
 .card-collection .item.green-pea .img-box {
-    background-image: url(assets/green-pea.jpg);
+    background-image: url(img/green-pea.jpg);
 }
 .card-collection .item.onion .img-box {
-    background-image: url(assets/onion.png);
+    background-image: url(img/onion.png);
 }
 .card-collection .item.green-plant .img-box {
-    background-image: url(assets/green-plant.png);
+    background-image: url(img/green-plant.png);
 }
 
 .card-collection .item .img-box .plant {
@@ -344,7 +344,7 @@ h2 {
 
 /*=== footer ===*/
 .page-footer {
-    background-image: url(assets/touch-plants.png);
+    background-image: url(img/touch-plants.png);
     background-repeat: no-repeat, repeat;
     background-size: cover; 
     background-position: center center;
@@ -388,7 +388,6 @@ h2 {
     justify-content: space-between;
     width: 100%;
     padding-inline: 8px;
-    /* font-size: 17px; */
 }
 .page-footer .footer-details > span {
     padding: 16px;
