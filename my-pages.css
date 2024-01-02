@@ -117,6 +117,12 @@ h2 {
     justify-content: center;
 }
 
+.art-gallery .gallery-item .img-1 {
+    background: url(assets/gallery-img1-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .art-gallery img {
 
     width: 100%;
@@ -133,7 +139,8 @@ h2 {
 
 
 
-/*### ---------- 800px ------------- ###*/
+
+/*############  800px ############*/
 @media screen and (min-width: 800px) {
     .page-header {
         grid-template-areas:
@@ -210,6 +217,9 @@ h2 {
         margin-block: 30px;
     }
 
+
+
+
     .art-gallery {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -217,8 +227,15 @@ h2 {
     }
 
     .art-gallery .gallery-item {
+        justify-content: center;
+        align-items: center;
         height: 100%;
     }
+    .art-gallery .gallery-item img {
+        height: 100%;
+        width: fit-content;
+    }
+
 }
 
 
