@@ -102,19 +102,15 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 12px;
-    height: 220px;
     padding: 12px;
-
     background: #9E6D52;
 }
 .art-gallery .gallery-item {
-    height: 92px;
-    width: 100%;
-    overflow: hidden;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .art-gallery .gallery-item .img-1 {
